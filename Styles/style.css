@@ -1,0 +1,70 @@
+@font-face{
+    font-family:'RobotoB'; 
+    src: url(/Fonts/Roboto.ttf);
+}
+
+body{
+    margin: 0;
+    background: red;
+    font-family: 'RobotoB', sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #f5f5f5;
+    box-shadow: 0 1px #bdbdbd;
+}
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo{
+    width: 200px;
+    float: left;
+    padding: 20px 0;
+}
+
+nav{
+    float: right;
+}
+nav ld{
+    font-size: larger;
+}
+nav ul{
+    margin: 0;
+    padding-bottom: 0;
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    margin-left: -5px;
+    padding-top: 25px;
+    padding-bottom: 22px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+nav li:hover a{
+    color: #f5f5f5;
+}
+nav li:hover{
+    background-color: #3c6f9c;
+}
+nav a{
+    color: #212121;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: small;
+    letter-spacing: 3px;
+}
+/*
+nav a:hover{
+    color: darkgray;
+}
+*/
