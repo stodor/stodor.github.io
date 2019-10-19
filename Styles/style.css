@@ -32,13 +32,13 @@ body{
     letter-spacing: 1px;
     left: 50%;
     height: 100px;
-    transform: translate(0, -130%);
+    transform: translate(0, -124%);
     align-content: center;
     color: whitesmoke;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 #homepage-quote p{
-    font-size: 26px;
+    font-size: 20px;
     text-align: center;
     text-transform: uppercase;
     padding-top: 40px;
