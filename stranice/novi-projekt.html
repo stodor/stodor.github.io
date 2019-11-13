@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="hr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Gržinčić-Klepić, Todorović">
+        <meta name="description" content="SpaceX je tvrtka koja se bavi razvojem raketa-nosaša i ostalih tehnologija vezanih uz istraživanje svemira.">
+        <title>SpaceX</title>
+        <link rel="stylesheet" href="../stil/style.css">
+    </head>
+
+    <body>
+        <header>
+                <div class="header">
+    
+                    <a href="../index.html"><img src="../slike/SpaceX-Logo.svg" alt="SpaceX logo" class="logo"></a>          
+                    <nav>
+                            <ul>
+                                <li><a href="../stranice/o-nama.html">O nama</a></li>
+                                <li><a href="../stranice/novi-projekt.html">Novi projekt</a></li>
+                            </ul>
+                        </nav>
+                </div>
+            </header>
+
+            <div class="homepage-image">
+                    <img src="../slike/ISS.jpg" alt="Međunarodna svemirska stanica">
+                    <div id="motto"><p>Prijavi se na novi projekt i budi dio budućnosti</p>
+                    </div>
+                </div>
+
+            <div class="gl-tekst">
+                    <fieldset class="obrazac">
+                        <legend>OBRAZAC ZA PRIJAVU</legend>
+                        <form>
+                            Upis teksta: <input name="tekst" type="text"><br>
+                            God rođ.<input name="datum_rodjenja" type="date"><br>
+                            Odabir: <select name="odabir">
+                                    <option value="odabir1">odabir 1</option>
+                                    <option value="odabir2">odabir 2</option>
+                                    <option value="odabir3">odabir 3</option>
+                                    <option value="odabir4">odabir 4</option>
+                                  </select><br>
+
+                            Unesi poruku:<textarea name="komentari" rows="3" cols="20" wrap="hard" placeholder="Ako imate komentar, dodajte ga u ovaj prostor"></textarea><br>
+                            Odaberi CV:<input name="cv" type="file"><br>
+
+                            Jedan ili dva:<br>
+                            <input type="radio" name="broj" value="jedan">Jedan<br>
+                            <input type="radio" name="broj" value="dva">Dva<br>
+                            Unesi broj: <input name ="broj" type="number" min="0" max="40" required="required"><br>
+                            
+                            Višestruki odabir:<br>
+                            <input type='checkbox' name="role"> 
+                                Vozim role na posao.
+                            <br>
+                            <input type="checkbox" name="auto"> 
+                                Vozim auto na posao.
+                            <br>
+
+
+
+                            <button class="dugme" type="submit">Pošalji prijavu</button>
+                            <button class="dugme" type="reset">Izbriši obrazac</button>
+                            <br>
+                        </form>
+                    </fieldset>
+                    <br>
+                    
+                </div>
+
+            
+        
+        
+
+        <footer class="footer">
+            <img src="../slike/SpaceX-Logo-footer.svg" alt="SpaceX logo" class="logo-footer">
+            <p>© 2019 SPACE EXPLORATION TECHNOLOGIES CORP.</p>
+        </footer>
+
+    </body>
+</html>

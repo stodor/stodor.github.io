@@ -1,43 +1,68 @@
 <!doctype html>
-<html>
+<html lang="hr">
     <head>
-        <meta charset="hr">
+        <meta charset="UTF-8">
+        <meta name="author" content="Gržinčić-Klepić, Todorović">
+        <meta name="description" content="SpaceX je tvrtka koja se bavi razvojem raketa-nosaša i ostalih tehnologija vezanih uz istraživanje svemira.">
         <title>SpaceX</title>
-        <link rel="stylesheet" href="Styles/style.css">
-        
+        <link rel="stylesheet" href="stil/style.css">
     </head>
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
 
     <body>
         <header>
             <div class="header">
 
-                <img src="Images/SpaceX-Logo.svg" alt="SpaceX logo" class="logo">                
+                    <a href="index.html"><img src="slike/SpaceX-Logo.svg" alt="SpaceX logo" class="logo"></a>               
                 <nav>
                     <ul>
-                        <ld>|</ld>
-                        <li><a href="#">O nama</a></li>
-                        <li><a href="#">Projekt</a></li>
-                        <nav class="prijava"><li><a href="#">Prijava za posao</a></li></nav>
+                        <li><a href="./stranice/o-nama.html">O nama</a></li>
+                        <li><a href="./stranice/novi-projekt.html">Novi projekt</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
 
         <div class="homepage-image">
-            <img src="Images/homepage-img.jpg" alt="rocket launch">
-            <div id="homepage-quote"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p></div>
+            <img src="slike/homepage-img.jpg" alt="lansiranje rakete">
+            <div id="motto"><p>SpaceX - </p>
+            <!--<a class="dugme2" href="./stranice/o-nama.html">Više o projektu</a>-->
+            </div>
         </div>
-        
-        
+
+        <div class="gl-tekst">
+            <h3>Novosti i informacije</h3>
+            <div class="box-slika2">
+                    <img src="./slike/mars.jpg" alt="Teraformiran mars" class="slika2">
+                    <div class="tekstslike">Saznaj više</div>
+                    <div class="novost">
+                        <h2>Novi napredak u pipremi misije kolonizacije marsa.</h2>
+                    </div>
+            </div>
+            <div class="box-slika2">
+                    <img src="./slike/slijetanje.jpg" alt="Slijetanje rakete na morsku platformu" class="slika2">
+                    <div class="tekstslike">Saznaj više</div>
+                    <div class="novost">
+                        <h2>Rakete za ponovno korištenje. Trenutna tehnologija i budućnost razvoja.</h2>
+                    </div>
+            </div>
+            <div class="box-slika2">
+                    <img src="./slike/nasa.jpg" alt="Logo NASA-e" class="slika2">
+                    <div class="tekstslike">Saznaj više</div>
+                    <div class="novost">
+                        <h2>Nastavak suranje sa NASA-om. Posjet austronauta i mehaničara našim postrojenjima.</h2>
+                    </div>
+            </div>
+            <div class="box-slika2">
+                    <a href="./stranice/novi-projekt.html"><img src="./slike/raketa.jpg" alt="Raketa u svemiru" class="slika2"></a>
+                    <div class="tekstslike">Saznaj više o projektu</div>
+                    <div class="novost">
+                        <h2>Počela je prva faza razvoja rakete nove generacije. Potrebna svjerža radna snaga.</h2>
+                    </div>
+            </div>
+        </div>
 
         <footer class="footer">
+            <img src="slike/SpaceX-Logo-footer.svg" alt="SpaceX logo" class="logo-footer">
             <p>© 2019 SPACE EXPLORATION TECHNOLOGIES CORP.</p>
         </footer>
 

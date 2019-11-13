@@ -1,0 +1,265 @@
+@font-face{
+    font-family:'NavFont'; 
+    src: url(../Fonts/Roboto-Light.ttf);
+}
+@font-face{
+    font-family:'BodyFont'; 
+    src: url(../Fonts/Rubik-Medium.ttf);
+}
+@font-face{
+    font-family: 'QouteFont';
+    src: url(../Fonts/PTSans-Bold.tff)
+}
+
+html{
+    min-height: 100%;
+    padding-bottom: 80px;
+}
+body{
+    height: 100%;
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+.homepage-image img{
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+#motto{    
+    font-family: 'QuoteFont', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    left: 50%;
+    height: 100px;
+    transform: translate(0, -124%);
+    align-content: center;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+#motto p{
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 40px;
+}
+
+.gl-tekst{
+    font-family: 'BodyFont', sans-serif;
+    letter-spacing: 1px;
+    left: 50%;
+    height: 100%;
+    align-content: center;
+    color: #3A3A3A;
+}
+
+.gl-tekst p{
+    font-size: 14px;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: start;
+}
+.gl-tekst h2{
+    font-size: 24px;
+    text-align: center;
+}
+.gl-tekst h3{
+    font-size: 18px;
+    padding-left: 10%;
+}
+.gl-tekst h4{
+    font-size: 14px;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.opistvrtke{
+    background-color: #3A3A3A;
+    color: whitesmoke;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.opistvrtke h4{
+    font-family: 'BodyFont', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    font-size: 14px;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-shadow: 2px 2px black;
+}
+
+.header{
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'NavFont', sans-serif;
+}
+
+header{
+    background-color: whitesmoke;
+}
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.slika{
+    width: 100%;
+}
+.slika2{
+    width: 100%;
+    border-radius:15px 15px 0 0;
+}
+.slika2:hover{
+    opacity: 70%;
+}
+
+.logo{
+    width: 200px;
+    float: left;
+    padding-top: 20px;
+    padding-left: 100px;
+}
+.logo-footer{
+    width: 100px;
+    float: left;
+    padding-top: 15px;
+    padding-left: 10%;
+}
+
+.box-slika{  
+    position: relative; 
+    margin-left: 10%;
+    width: 25%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 0px 0px 20px 20px;
+}
+.box-slika2{ 
+    position: relative; 
+    text-align: center;
+    display: inline-block;
+    margin-left: 7%;
+    width: 15%;
+    box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+}
+.box-slika2:hover .tekstslike{
+    opacity: 100%;
+}
+.opis-slike{
+    text-align: right;
+    padding: 3px;
+}
+.novost h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px;
+}
+.tekstslike{
+    opacity: 0%;
+    pointer-events: none;
+    color: whitesmoke;
+    position: absolute;
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+nav{
+    float: right;
+    padding-right: 100px;
+}
+nav ld{
+    font-size: larger;
+}
+nav ul{
+    margin: 0;
+    padding-bottom: 0;
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    margin-left: -5px;
+    padding-top: 25px;
+    padding-bottom: 22px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+nav li:hover a{
+    color: whitesmoke;
+}
+nav li:hover{
+    background-color: #699DBA;
+}
+.prijava{
+    font-family: 'NavFont', sans-serif;
+    position: absolute;
+    left: 50%;
+    padding-bottom: 80px;
+}
+.prijava a{
+    color: whitesmoke;
+}
+.prijava li{
+    background-color: #6B0252;
+}
+.prijava li:hover{
+    background-color: #6B0252;
+}
+
+.obrazac{
+    border-radius: 5px;
+    margin: 0 0 0 25%;
+    width: 35%;
+    font-size: 14px;
+}
+.dugme{
+    float: right;
+    margin-right: 5px;
+    padding: 10px 15px;
+    background-color: gainsboro;
+    font-style: oblique;
+    font-weight: bold;
+    border: none;
+    text-decoration: none;
+}
+.dugme2{
+    color: #3A3A3A;
+    background-color: rgba(245, 245, 245, 0.8);
+    float: right;
+    margin-right: 3%;
+    padding: 10px 15px;
+    padding-bottom: 50%;
+    text-decoration: none;
+}
+nav a{
+    color: #3A3A3A;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: small;
+    letter-spacing: 4px;
+}
+
+.footer{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: right;
+    height: 40px;
+    background-color: rgb(15, 15, 15);
+    color: gray;
+    position: fixed;
+    bottom:0;
+    width:100%;
+    margin-top: 100px;
+}
+footer p{
+    padding-top: 0;
+    padding-right: 30px;
+}
