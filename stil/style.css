@@ -1,32 +1,36 @@
-@font-face{
-    font-family:'NavFont'; 
+@font-face {
+    font-family: 'NavFont';
     src: url(../Fonts/Roboto-Light.ttf);
 }
-@font-face{
-    font-family:'BodyFont'; 
+
+@font-face {
+    font-family: 'BodyFont';
     src: url(../Fonts/Rubik-Medium.ttf);
 }
-@font-face{
+
+@font-face {
     font-family: 'QouteFont';
     src: url(../Fonts/PTSans-Bold.tff)
 }
 
-html{
+html {
     min-height: 100%;
     padding-bottom: 80px;
 }
-body{
+
+body {
     height: 100%;
     margin: 0;
     background-color: whitesmoke;
 }
 
-.slika-gl-str img{
+.slika-gl-str img {
     width: 100%;
     margin: 0;
     position: relative;
 }
-#motto{    
+
+#motto {
     font-family: 'QuoteFont', sans-serif;
     font-weight: bold;
     letter-spacing: 1px;
@@ -37,51 +41,208 @@ body{
     color: whitesmoke;
     background-color: rgba(0, 0, 0, 0.6);
 }
-#motto p{
+
+#motto p {
     font-size: 20px;
     text-align: center;
     text-transform: uppercase;
     padding-top: 40px;
 }
 
-.gl-tekst{
+.gl-tekst-p {
     font-family: 'BodyFont', sans-serif;
     letter-spacing: 1px;
     left: 50%;
     height: 100%;
     align-content: center;
     color: #3A3A3A;
+    /**/
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    grid-gap: 50px;
 }
 
-.gl-tekst p{
+#opis_projekta {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: rgb(240, 240, 240);
+}
+
+#obrazac-grid {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.gl-tekst-p p {
     font-size: 14px;
     text-align: center;
     padding-left: 10%;
     padding-right: 10%;
     text-align: start;
 }
-.gl-tekst h2{
+
+.gl-tekst-p h2 {
     font-size: 24px;
     text-align: center;
 }
-.gl-tekst h3{
+
+.gl-tekst-p h3 {
     font-size: 18px;
     padding-left: 10%;
 }
-.gl-tekst h4{
+
+.gl-tekst-p h4 {
     font-size: 14px;
     text-align: center;
     padding-left: 10%;
     padding-right: 10%;
 }
 
-.opistvrtke{
+.gl-tekst-o {
+    font-family: 'BodyFont', sans-serif;
+    letter-spacing: 1px;
+    left: 50%;
+    height: 100%;
+    align-content: center;
+    color: #3A3A3A;
+    /**/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    margin-top: 5%;
+    grid-gap: 50px;
+}
+
+.gl-tekst-o p {
+    font-size: 14px;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: justify;
+}
+
+.gl-tekst-o h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.gl-tekst-o h3 {
+    font-size: 18px;
+    padding-left: 10%;
+}
+
+.gl-tekst-o h4 {
+    font-size: 14px;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.gl-tekst-i {
+    font-family: 'BodyFont', sans-serif;
+    letter-spacing: 1px;
+    left: 50%;
+    height: 100%;
+    align-content: center;
+    color: #3A3A3A;
+    /**/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    margin-left: 5%;
+    margin-right: 5%;
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.gl-tekst-i p {
+    font-size: 14px;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: justify;
+}
+
+.gl-tekst-i h2 {
+    font-size: 24px;
+    text-align: justify;
+}
+
+.gl-tekst-i h3 {
+    font-size: 24px;
+    padding-left: 10%;
+}
+
+.gl-tekst-i h4 {
+    font-size: 14px;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#vijesti {
+    grid-column: 1/5;
+    grid-row: 1;
+    text-align: left;
+}
+
+#n1 {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+}
+
+#n2 {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+}
+
+#n3 {
+    grid-column: 3;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+}
+
+#n4 {
+    grid-column: 4;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+}
+
+#povijest {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#povijest-slika {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#buducnost {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#buducnost-slika {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.opistvrtke {
     background-color: #3A3A3A;
     color: whitesmoke;
     padding-top: 2%;
     padding-bottom: 2%;
 }
-.opistvrtke h4{
+
+.opistvrtke h4 {
     font-family: 'BodyFont', sans-serif;
     font-weight: lighter;
     letter-spacing: 2px;
@@ -92,76 +253,91 @@ body{
     text-shadow: 2px 2px black;
 }
 
-.header{
+.header {
     width: 100%;
     margin: 0 auto;
     font-family: 'NavFont', sans-serif;
+    /**/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-header{
+header {
     background-color: whitesmoke;
 }
-header::after{
+
+header::after {
     content: '';
     display: table;
     clear: both;
 }
 
-.slika{
+.slika {
     width: 100%;
 }
-.slika2{
+
+.slika2 {
     width: 100%;
-    border-radius:15px 15px 0 0;
+    border-radius: 15px 15px 0 0;
 }
-.slika2:hover{
+
+.slika2:hover {
     opacity: 70%;
 }
 
-.logo{
+.logo {
     width: 200px;
     float: left;
     padding-top: 20px;
     padding-left: 100px;
 }
-.logo-footer{
+
+.logo-footer {
     width: 100px;
     float: left;
     padding-top: 15px;
     padding-left: 10%;
 }
 
-.box-slika{  
-    position: relative; 
-    margin-left: 10%;
-    width: 25%;
+.box-slika {
+    width: 75%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 0px 0px 20px 20px;
 }
-.box-slika2{ 
-    position: relative; 
+
+.box-slika2 {
+    position: relative;
     text-align: center;
     display: inline-block;
-    margin-left: 7%;
-    width: 15%;
+    width: 50%;
     box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 15px;
+    align-content: center;
 }
-.box-slika2:hover .tekstslike{
+
+.box-slika2:hover .tekstslike {
     opacity: 100%;
 }
-.opis-slike{
+
+.opis-slike {
     text-align: right;
     padding: 3px;
 }
-.novost h2{
+
+.novost {
+    word-wrap: break-word;
+}
+
+.novost h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
     font-size: 14px;
-    text-align: center;
-    padding: 5px;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
 }
-.tekstslike{
+
+.tekstslike {
     opacity: 0%;
     pointer-events: none;
     color: whitesmoke;
@@ -171,19 +347,19 @@ header::after{
     transform: translate(-50%, -50%);
 }
 
-nav{
+nav {
     float: right;
     padding-right: 100px;
 }
-nav ld{
-    font-size: larger;
-}
-nav ul{
+
+nav ul {
     margin: 0;
     padding-bottom: 0;
+    padding-right: 0;
     list-style: none;
 }
-nav li{
+
+nav li {
     display: inline-block;
     margin-left: -5px;
     padding-top: 25px;
@@ -191,35 +367,53 @@ nav li{
     padding-left: 30px;
     padding-right: 30px;
 }
-nav li:hover a{
+
+nav li:hover a {
     color: whitesmoke;
 }
-nav li:hover{
+
+nav li:hover {
     background-color: #699DBA;
 }
-.prijava{
+
+.prijava {
     font-family: 'NavFont', sans-serif;
     position: absolute;
     left: 50%;
     padding-bottom: 80px;
 }
-.prijava a{
+
+.prijava a {
     color: whitesmoke;
 }
-.prijava li{
-    background-color: #6B0252;
-}
-.prijava li:hover{
+
+.prijava li {
     background-color: #6B0252;
 }
 
-.obrazac{
-    border-radius: 5px;
-    margin: 0 0 0 25%;
-    width: 35%;
-    font-size: 14px;
+.prijava li:hover {
+    background-color: #6B0252;
 }
-.dugme{
+
+.obrazac {
+    background-color: rgb(200, 200, 200);
+    border-color: transparent;
+    margin: 0 0 0 25%;
+    width: 45%;
+    font-size: 14px;
+    margin-bottom: 5px;
+    padding: 2%;
+    outline: none;
+}
+
+.obrazac legend {
+    text-align: center;
+    padding-top: 50px;
+    font-size: large;
+    letter-spacing: 7px;
+}
+
+.dugme {
     float: right;
     margin-right: 5px;
     padding: 10px 15px;
@@ -229,7 +423,8 @@ nav li:hover{
     border: none;
     text-decoration: none;
 }
-.dugme2{
+
+.dugme2 {
     color: #3A3A3A;
     background-color: rgba(245, 245, 245, 0.8);
     float: right;
@@ -238,7 +433,8 @@ nav li:hover{
     padding-bottom: 50%;
     text-decoration: none;
 }
-nav a{
+
+nav a {
     color: #3A3A3A;
     text-decoration: none;
     text-transform: uppercase;
@@ -247,7 +443,78 @@ nav a{
     letter-spacing: 4px;
 }
 
-.footer{
+input[type="text"] {
+    border: 2px solid rgb(115, 115, 115);
+    border-radius: 10px;
+    outline: none;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+input[type="date"] {
+    border: 1px solid rgb(115, 115, 115);
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    position: relative;
+    background-color: rgb(222, 222, 222);
+    color: white;
+    top: 10px;
+    height: 25px;
+    width: 25px;
+    border: 0;
+    border-radius: 50px;
+    outline: none;
+}
+
+input[type="radio"]:hover {
+    background-color: rgb(150, 150, 150);
+}
+
+input[type="radio"]:checked::before {
+    position: absolute;
+    font: 20px 'BodyFont', sans-serif;
+    bottom: 1px;
+    content: '\2714';
+}
+
+input[type="radio"]:checked::after {
+    background-color: rgb(222, 222, 222);
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    padding: 3px;
+    text-align-last: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    direction: ltr;
+    font-family: 'BodyFont', sans-serif;
+    font-weight: lighter;
+}
+
+select option {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: 'BodyFont', sans-serif;
+    font-weight: lighter;
+}
+
+select option:checked {
+    background-color: rgb(215, 215, 215);
+}
+
+.footer {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     text-align: right;
@@ -255,11 +522,12 @@ nav a{
     background-color: rgb(15, 15, 15);
     color: gray;
     position: fixed;
-    bottom:0;
-    width:100%;
+    bottom: 0;
+    width: 100%;
     margin-top: 100px;
 }
-footer p{
+
+footer p {
     padding-top: 0;
     padding-right: 30px;
 }

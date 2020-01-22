@@ -1,81 +1,181 @@
-<!doctype html>
-<html lang="hr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="Gržinčić-Klepić, Todorović">
-        <meta name="description" content="SpaceX je tvrtka koja se bavi razvojem raketa-nosaša i ostalih tehnologija vezanih uz istraživanje svemira.">
-        <title>SpaceX</title>
-        <link rel="stylesheet" href="../stil/style.css">
-    </head>
+﻿<!doctype html>
+<html lang = "hr">
 
-    <body>
-        <header>
-                <div class="header">
-    
-                    <a href="../index.html"><img src="../slike/SpaceX-Logo.svg" alt="SpaceX logo" class="logo"></a>          
-                    <nav>
-                            <ul>
-                                <li><a href="../stranice/o-nama.html">O nama</a></li>
-                                <li><a href="../stranice/novi-projekt.html">Novi projekt</a></li>
-                            </ul>
-                        </nav>
-                </div>
-            </header>
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "author" content = "Gržinčić-Klepić, Todorović">
+    <meta name="description" content = "SpaceX je tvrtka koja se bavi razvojem raketa-nosaša i ostalih tehnologija vezanih uz istraživanje svemira.">
+    <title>SpaceX</title>
+    <link rel = "stylesheet" href = "../stil/style.css">
+    <script type = "text/javascript" src = "../skripte/skripta.js"></script>
+</head>
 
-            <div class="slika-gl-str">
-                    <img src="../slike/ISS.jpg" alt="Međunarodna svemirska stanica">
-                    <div id="motto"><p>Prijavi se na novi projekt i budi dio budućnosti</p>
-                    </div>
-                </div>
+<body>
+    <header>
+        <div class = "header">
+            <div id = "h-logo">
+                <a href = "../index.html"><img src = "../slike/SpaceX-Logo.svg" alt = "SpaceX logo" class = "logo"></a>
+            </div>
+            <div id = "nav_elem">
+                <nav>
+                    <ul>
+                        <li><a href = "./o-nama.html">O nama</a></li>
+                        <li><a href = "./novi-projekt.html">Novi projekt</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-            <div class="gl-tekst">
-                    <fieldset class="obrazac">
-                        <legend>OBRAZAC ZA PRIJAVU</legend>
-                        <form>
-                            Upis teksta: <input name="tekst" type="text"><br>
-                            God rođ.<input name="datum_rodjenja" type="date"><br>
-                            Odabir: <select name="odabir">
-                                    <option value="odabir1">odabir 1</option>
-                                    <option value="odabir2">odabir 2</option>
-                                    <option value="odabir3">odabir 3</option>
-                                    <option value="odabir4">odabir 4</option>
-                                  </select><br>
+    <main>
+        <div class = "slika-gl-str">
+            <img src = "../slike/ISS.jpg" alt = "Međunarodna svemirska stanica">
+            <div id = "motto">
+                <p>Prijavi se na novi projekt i budi dio budućnosti</p>
+            </div>
+        </div>
 
-                            Unesi poruku:<textarea name="komentari" rows="3" cols="20" wrap="hard" placeholder="Ako imate komentar, dodajte ga u ovaj prostor"></textarea><br>
-                            Odaberi CV:<input name="cv" type="file"><br>
+        <div class = "gl-tekst-p">
+            <div id = "opis_projekta">
+                <h3>Tražimo tim od 5 kandidata za novi projekt rakete nove generacije, koji će biti raspoređeni po
+                    sljedećim radnom funkcijama:</h3>
+                <ul>
+                    <li>Marketing - osoba zadužena za odnoj sa javnošću, prezentiranje projekta i naše tvrtke, te
+                        uporaba novih medija u našem poslu</li>
+                    <li>Dizajn - osoba zadužena za dizajn i estetiku nove rakete</li>
+                    <li>Logistika - osoba zadužena za proračune i korištenje materijala i ostalih potrepština.</li>
+                    <li>Pogonski inženjer - osoba zadužena za projektiranje i ispitivanje pogona naše nove rakete</li>
+                    <li>Inženjer materijala - osoba zadužena za proračune i odabir pravih materijala potrebnih za izradu
+                        rakete
+                    </li>
+                </ul>
+            </div>
+            <div id = "obrazac_grid">
+                <fieldset class = "obrazac">
+                    <legend>OBRAZAC ZA PRIJAVU</legend>
+                    <form class = "upitnik" onsubmit = "return IzracunKandidata()">
+                        Ime: <input name = "ime" type = "text" required = "required"><br>
+                        <br>Prezime: <input name = "prezime" type = "text" required = "required"><br>
+                        <br>Spol:
+                        <input type = "radio" name = "spol" value = "m" required = "required">Muško
+                        <input type = "radio" name = "spol" value = "z">Žensko<br>
+                        <br>Godina rođenja: <input name = "datum_rodjenja" type = "date" required = "required"><br>
+                        <br>Imate li prijašnjeg iskustva?
+                        <input type = "radio" name = "iskustvo" value = "da" required = "required">Da
+                        <input type = "radio" name = "iskustvo" value = "ne">Ne<br>
+                        <br>Koliko brzo učite nove vještine? 
+                        <select name = "vjestine" required = "required">
+                            <option disabled selected value> -- odaberite opciju -- </option>
+                            <option value = "4">Vrlo brzo</option>
+                            <option value = "3">Umjereno brzo</option>
+                            <option value = "2">Ovisi o vještini</option>
+                            <option value = "1">Sporo</option>
+                            <option value = "0">Nimalo</option>
+                        </select><br>
+                        <br>Imate li iskustva sa marketingom?
+                        <input type = "radio" name = "marketing" value  = "da" required = "required">Da
+                        <input type = "radio" name = "marketing" value  = "ne">Ne<br>
+                        <br>Smatrate li se kreativnom osobom?
+                        <input type = "radio" name = "kreativnost" value = "da" required = "required">Da
+                        <input type = "radio" name = "kreativnost" value = "ne">Ne<br>
+                        <br>Funkcionirate li pod stresom?
+                        <input type = "radio" name = "stres" value = "da" required = "required">Da
+                        <input type = "radio" name = "stres" value = "ne">Ne<br>
+                        <br>Što smatrate da je najvažnija osobina zaposlenika SpaceX-a?
+                        <select name = "osobina" required = "required">
+                            <option disabled selected value> -- odaberite opciju -- </option>
+                            <option value = "kreativnost">Kreativnost</option>
+                            <option value = "inovativnost">Inovativnost</option>
+                            <option value = "komunikativnost">Komunikativnost</option>
+                            <option value = "timski-rad">Timski rad</option>
+                            <option value = "ucenje">Želja kontinuiranim učenjem</option>
+                            <option value = "upornost">Upornost</option>
+                            <option value = "marljivost">Marljivost</option>
+                        </select><br>
+                        <br>Jeste li timski igrač?
+                        <input type = "radio" name = "timski-igrac" value = "da" required = "required">Da
+                        <input type = "radio" name = "timski-igrac" value = "ne">Ne<br>
+                        <br>Slažete li se da je u redu pogriješiti više puta, ali da se pomoću pogrešaka može doći do
+                        novog i originalnog rješenja?
+                        <input type = "radio" name = "pogreske" value = "da" required = "required">Da
+                        <input type = "radio" name = "pogreske" value = "ne">Ne<br>
+                        <br>Koliko jezika govorite? <select name = "jezici" required = "required">
+                            <option disabled selected value> -- odaberite opciju -- </option>
+                            <option value = "5">Tri ili više</option>
+                            <option value = "2">Dva - tri</option>
+                            <option value = "0">Jedan</option>
+                        </select><br>
+                        <br>Poduzimate li inicijativu?
+                        <input type = "radio" name = "inicijativa" value = "da" required = "required">Da
+                        <input type = "radio" name = "inicijativa" value = "ne">Ne<br>
+                        <br>Ukoliko bismo Vas zaposlili, koliko biste li dugo ostali u našoj tvrtci?
+                        <input name = "duljina-zaposlenja" type = "number" min = "1" max = "20" required = "required"><br>
+                        <br>Koliko ste upoznati sa polu-vodičima? <select name = "poluvodici" required = "required">
+                            <option disabled selected value> -- odaberite opciju -- </option>
+                            <option value = "10">Vrlo upoznat/a</option>
+                            <option value = "5">Ponešto upoznat/a</option>
+                            <option value = "3">Loše upoznat/a</option>
+                            <option value = "0">Nimalo upoznat/a</option>
+                            <option value = "3">Nimalo, ali sam spreman/na naučiti</option>
+                        </select><br>
+                        <br>Jeste li uspješni u efikasnoj organizaciji raspoloživog vremena?
+                        <input type = "radio" name = "raspolozivost-vremena" value = "da" required = "required">Da
+                        <input type = "radio" name = "raspolozivost-vremena" value = "ne">Ne<br>
+                        <br>Koliko ste upoznati sa naprednom matematikom?
+                        <select name = "matematika" required = "required">
+                            <option disabled selected value> -- odaberite opciju -- </option>
+                            <option value = "10">Vrlo upoznat/a</option>
+                            <option value = "8">Ponešto upoznat/a</option>
+                            <option value = "0">Loše upoznat/a</option>
+                            <option value = "0">Nimalo upoznat/a</option>
+                            <option value = "0">Nimalo, ali sam spreman/na naučiti</option>
+                        </select><br>
+                        <br>Koliko imate iskustva sa uporabom materijala u proizvodnji?
+                        <select name = "materijali" required = "required">
+                            <option disabled selected value> -- odaberite opciju -- </option>
+                            <option value = "10">Vrlo upoznat/a</option>
+                            <option value = "7">Ponešto upoznat/a</option>
+                            <option value = "3">Loše upoznat/a</option>
+                            <option value = "0">Nimalo upoznat/a</option>
+                            <option value = "1">Nimalo, ali sam spreman/na naučiti</option>
+                        </select><br>
+                        <br>Jeste li upoznati sa fizikom fluida?
+                        <input type = "radio" name = "fizikafluida" value = "da" required = "required">Da
+                        <input type = "radio" name = "fizikafluida" value = "ne">Ne<br>
+                        <br>Jeste li detaljni pri pisanju dokumentacije?
+                        <input type = "radio" name = "dokumentacija" value = "da" required = "required">Da
+                        <input type = "radio" name = "dokumentacija" value = "ne">Ne<br>
+                        <br>Koliko su opsežne Vaše metode testiranja?
+                        <select name = "testiranje" required = "required">
+                            <option disabled selected value> -- odaberite opciju -- </option>
+                            <option value = "4">Vrlo opsežne</option>
+                            <option value = "3">Ponešto opsežne</option>
+                            <option value = "1">Malo opsežne</option>
+                            <option value = "0">Nimalo opsežne</option>
+                        </select><br>
+                        <br>Smatrate li da je samopreispitivanje vlastitih postupaka i metoda pozitivna osobina?
+                        <input type = "radio" name = "preispitivanje" value = "da" required = "required">Da
+                        <input type = "radio" name = "preispitivanje" value = "ne">Ne<br>
+                        <br>
 
-                            Jedan ili dva:<br>
-                            <input type="radio" name="broj" value="jedan">Jedan<br>
-                            <input type="radio" name="broj" value="dva">Dva<br>
-                            Unesi broj: <input name ="broj" type="number" min="0" max="40" required="required"><br>
-                            
-                            Višestruki odabir:<br>
-                            <input type='checkbox' name="role"> 
-                                Vozim role na posao.
-                            <br>
-                            <input type="checkbox" name="auto"> 
-                                Vozim auto na posao.
-                            <br>
+                        <button class = "dugme" type = "submit">Pošalji prijavu</button>
+                        <button class = "dugme" type = "reset">Izbriši obrazac</button>
+                        <br>
+                    </form>
+                </fieldset>
+            </div>
+        </div>
+    </main>
 
 
 
-                            <button class="dugme" type="submit">Pošalji prijavu</button>
-                            <button class="dugme" type="reset">Izbriši obrazac</button>
-                            <br>
-                        </form>
-                    </fieldset>
-                    <br>
-                    
-                </div>
 
-            
-        
-        
 
-        <footer class="footer">
-            <img src="../slike/SpaceX-Logo-footer.svg" alt="SpaceX logo" class="logo-footer">
-            <p>© 2019 SPACE EXPLORATION TECHNOLOGIES CORP.</p>
-        </footer>
+    <footer class="footer">
+        <img src="../slike/SpaceX-Logo-footer.svg" alt="SpaceX logo" class="logo-footer">
+        <p>© 2019 SPACE EXPLORATION TECHNOLOGIES CORP.</p>
+    </footer>
 
-    </body>
+</body>
+
 </html>

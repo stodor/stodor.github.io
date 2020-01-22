@@ -1,18 +1,21 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="hr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="Gržinčić-Klepić, Todorović">
-        <meta name="description" content="SpaceX je tvrtka koja se bavi razvojem raketa-nosaša i ostalih tehnologija vezanih uz istraživanje svemira.">
-        <title>SpaceX</title>
-        <link rel="stylesheet" href="stil/style.css">
-    </head>
 
-    <body>
-        <header>
-            <div class="header">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Gržinčić-Klepić, Todorović">
+    <meta name="description" content="SpaceX je tvrtka koja se bavi razvojem raketa-nosaša i ostalih tehnologija vezanih uz istraživanje svemira.">
+    <title>SpaceX</title>
+    <link rel="stylesheet" href="stil/style.css">
+</head>
 
-                    <a href="index.html"><img src="slike/SpaceX-Logo.svg" alt="SpaceX logo" class="logo"></a>               
+<body>
+    <header>
+        <div class="header">
+            <div id="h-logo">
+                <a href="index.html"><img src="slike/SpaceX-Logo.svg" alt="SpaceX logo" class="logo"></a>
+            </div>
+            <div id="nav_elem">
                 <nav>
                     <ul>
                         <li><a href="./stranice/o-nama.html">O nama</a></li>
@@ -20,51 +23,65 @@
                     </ul>
                 </nav>
             </div>
-        </header>
-
+        </div>
+    </header>
+    <main>
         <div class="slika-gl-str">
             <img src="slike/homepage-img.jpg" alt="lansiranje rakete">
-            <div id="motto"><p>SpaceX - </p>
-            <!--<a class="dugme2" href="./stranice/o-nama.html">Više o projektu</a>-->
+            <div id="motto">
+                <p>SpaceX - Zvijezde su mašta, koju mi ostvarujemo</p>
+                <!--<a class="dugme2" href="./stranice/o-nama.html">Više o projektu</a>-->
             </div>
         </div>
 
-        <div class="gl-tekst">
-            <h3>Novosti i informacije</h3>
-            <div class="box-slika2">
+        <div class="gl-tekst-i">
+            <div id="vijesti">
+                <h3>Novosti i informacije</h3>
+            </div>
+            <div id="n1">
+                <div class="box-slika2">
                     <img src="./slike/mars.jpg" alt="Teraformiran mars" class="slika2">
                     <div class="tekstslike">Saznaj više</div>
                     <div class="novost">
                         <h2>Novi napredak u pipremi misije kolonizacije marsa.</h2>
                     </div>
+                </div>
             </div>
-            <div class="box-slika2">
+            <div id="n2">
+                <div class="box-slika2">
                     <img src="./slike/slijetanje.jpg" alt="Slijetanje rakete na morsku platformu" class="slika2">
                     <div class="tekstslike">Saznaj više</div>
                     <div class="novost">
                         <h2>Rakete za ponovno korištenje. Trenutna tehnologija i budućnost razvoja.</h2>
                     </div>
+                </div>
             </div>
-            <div class="box-slika2">
+            <div id="n3">
+                <div class="box-slika2">
                     <img src="./slike/nasa.jpg" alt="Logo NASA-e" class="slika2">
                     <div class="tekstslike">Saznaj više</div>
                     <div class="novost">
                         <h2>Nastavak suranje sa NASA-om. Posjet austronauta i mehaničara našim postrojenjima.</h2>
                     </div>
+                </div>
             </div>
-            <div class="box-slika2">
+            <div id="n4">
+                <div class="box-slika2">
                     <a href="./stranice/novi-projekt.html"><img src="./slike/raketa.jpg" alt="Raketa u svemiru" class="slika2"></a>
                     <div class="tekstslike">Saznaj više o projektu</div>
                     <div class="novost">
-                        <h2>Počela je prva faza razvoja rakete nove generacije. Potrebna svjerža radna snaga.</h2>
+                        <h2>Počela je prva faza razvoja rakete nove generacije. Potrebna svježa radna snaga.</h2>
                     </div>
+                </div>
             </div>
         </div>
+    </main>
 
-        <footer class="footer">
-            <img src="slike/SpaceX-Logo-footer.svg" alt="SpaceX logo" class="logo-footer">
-            <p>© 2019 SPACE EXPLORATION TECHNOLOGIES CORP.</p>
-        </footer>
+    <footer class="footer">
+        <img src="slike/SpaceX-Logo-footer.svg" alt="SpaceX logo" class="logo-footer">
+        <p>© 2019 SPACE EXPLORATION TECHNOLOGIES CORP.</p>
+    </footer>
 
-    </body>
+</body>
+
 </html>
